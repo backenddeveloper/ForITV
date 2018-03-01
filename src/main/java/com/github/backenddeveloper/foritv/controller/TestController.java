@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,7 +20,7 @@ public class TestController
    
     @ResponseBody
     @RequestMapping(path={"/test"},method=RequestMethod.POST)
-    public Test sayHello(@RequestBody Test test) {
+    public Test sayHello(@RequestBody Test test, HttpSession session) {
         return test ;
     }
 }

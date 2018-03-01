@@ -3,7 +3,7 @@ package com.github.backenddeveloper.foritv.config;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 
-public class MyWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer
+public class WebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer
 {
 
     @Override
